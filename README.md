@@ -23,7 +23,7 @@ This site is meant to commit on movies.
   ## Contribution 
 
 Martin Farr
-Ivana P
+Ivana Pina
 Paysen Lund
 
   ## Test 
@@ -38,12 +38,12 @@ Paysen Lund
 
   *GitHub UserName
   martinthefarr
-  ivana
-  payten
+  ivanapina
+  paysen1
   
 
   *Email Address
   martinnowaythisisarealemail@google.com
   ivananowaythisisarealemail@google.com
-  paytennowaythisisarealemail@google.com
+  paysennowaythisisarealemail@google.com
   
