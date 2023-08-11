@@ -1,0 +1,12 @@
+{{#extends "layouts/main"}}
+
+{{#content "title"}}{{ pageTitle }}{{/content}}
+
+{{#content "body"}}
+    <h2>{{ pageTitle }}</h2>
+    <ul>
+        {{#each movies}}
+            <li>{{ this.title }}</li>
+        {{/each}}
+    </ul>
+{{/content}}
