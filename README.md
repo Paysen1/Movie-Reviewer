@@ -22,9 +22,9 @@ This site is meant to commit on movies.
   
   ## Contribution 
 
-Martin Farr
-Ivana Pina
-Paysen Lund
+  Martin Farr
+  Ivana Pina
+  Paysen Lund
 
   ## Test 
 
@@ -44,6 +44,8 @@ Paysen Lund
 
   *Email Address
   martinnowaythisisarealemail@google.com
+
   ivananowaythisisarealemail@google.com
+
   paysennowaythisisarealemail@google.com
   
