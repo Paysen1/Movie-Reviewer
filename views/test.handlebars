@@ -1,3 +1,17 @@
-{{#each movies as |movie|}} 
-<div>{{movie.title}} <div>{{movie.overview}}</div> <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}"/></div>
+<div class="row row-cols-3 g-3 justify-content-center">
+  <div class="col">
+    {{#each movies as | movie|}} 
+      <div class="col">
+          <div class="card">
+            <h4 class="card-header">{{movie.title}} </h4>
+             <div class="card-body">
+                <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}"  class="card-img-top"/>
+              <p class="card-text"><div>{{movie.overview}}</div>
+                <button class="btn btn-primary btn-block">Review this movie</button>
+               </div>
+               </div>
+               </div>
 {{/each}}
+</div>
+</div>
+</div>
