@@ -10,3 +10,14 @@
         {{/each}}
     </ul>
 {{/content}}
+
+{{ main pageTitle="Test API Page" }}
+
+<h1>Test API Page</h1>
+<p>Testing API data retrieval:</p>
+
+<ul>
+    {{#each movies}}
+        <li>{{this.title}}</li>
+    {{/each}}
+</ul>
