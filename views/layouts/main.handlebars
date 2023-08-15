@@ -15,6 +15,13 @@
     <div class="container">
         <h2>Welcome to My Movie Review Website</h2>
         <p>Explore and review your favorite movies!</p>
+
+        <form action="/" method="GET">
+            <label for="movieTitle">Search for a Movie:</label>
+            <input type="text" id="movieTitle" name="query" placeholder="Enter movie title">
+            <button type="submit">Search</button>
+        </form>
+
         {{{ body }}}
     </div>
 
