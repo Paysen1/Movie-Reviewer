@@ -1,23 +1,33 @@
 {{#extends "layouts/main"}}
 
-{{#content "title"}}{{ pageTitle }}{{/content}}
+ {{#each movies as | movie|}} 
+          <div class="card">
+            <h4 class="card-header">{{movie.title}} </h4>
+             <div class="card-body">
+                <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}"  class="card-img-top"/>
+              <p class="card-text"><div>{{movie.overview}}</div>
+                <button class="btn btn-primary btn-block">Review this movie</button>
+               </div>
+               </div>
+               </div>
+{{/each}}
 
-{{#content "body"}}
-    <h2>{{ pageTitle }}</h2>
-    <ul>
-        {{#each movies}}
-            <li>{{ this.title }}</li>
-        {{/each}}
-    </ul>
-{{/content}}
+{{#if loggedIn}}
+<form class="comment-form">
+    <div>
+        <textarea name="comment-body"></textarea>
+    </div>
 
-{{ main pageTitle="Test API Page" }}
+    <div>
+        <button type="submit">add comment</button>
+    </div>
+</form>
+{{/if}}
 
-<h1>Test API Page</h1>
-<p>Testing API data retrieval:</p>
+{{> comments post.comments}}
 
-<ul>
-    {{#each movies}}
-        <li>{{this.title}}</li>
-    {{/each}}
-</ul>
+{{#if loggedIn}}
+<script src="/js/comment.js"></script>
+{{/if}}
+
+{{#extends}}
