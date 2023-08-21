@@ -35,13 +35,17 @@ router.post('/', async (req, res) => {
 // READ a single user
 router.get('/:id', async (req, res) => {
     try {
-        const userData = await User.findByPk(req.params.id);
+        const userId = req.params.id;
 
-        if (!userData) {
-            res.status(404).json({ message: 'No user found with that id!'});
+        // Check if the user exists
+        const userExists = await User.findByPk(userId);
+        if (!userExists) {
+            res.status(404).json({ message: 'User not found' });
             return;
         }
 
+        // User exists, proceed to retrieve and return user data
+        const userData = await User.findByPk(userId);
         res.status(200).json(userData);
     } catch (err) {
         res.status(500).json(err);
