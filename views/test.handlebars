@@ -1,3 +1,4 @@
+<section class="container">
 <div class="row row-cols-3 g-3 justify-content-center">
     {{#each movies as | movie|}} 
       <div class="row">
@@ -6,11 +7,12 @@
              <div class="card-body">
                 <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}"  class="card-img-top"/>
               <p class="card-text"><div>{{movie.overview}}</div>
-                <button class="btn btn-primary btn-block" onclick="/page">Review this movie</button>
+                <a class="btn btn-primary" href="/login" role="button">Review this movie</a>
                </div>
                </div>
                </div>
 {{/each}}
+</section>
 </div>
 </div>
 </div>

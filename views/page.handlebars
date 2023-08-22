@@ -1,6 +1,5 @@
-{{#extends "layouts/main"}}
-
- {{#each movies as | movie|}} 
+ <div class="container">
+  {{#each movies as | movie|}} 
           <div class="card">
             <h4 class="card-header">{{movie.title}} </h4>
              <div class="card-body">
@@ -29,5 +28,4 @@
 {{#if loggedIn}}
 <script src="/js/comment.js"></script>
 {{/if}}
-
-{{#extends}}
+</div>

@@ -37,7 +37,7 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
-router.get('/login', (req, res) => {
+router.get('/user', (req, res) => {
     // redirect the user to the root page if they are logged in
     if (req.session.logged_in) {
         res.redirect('/');
