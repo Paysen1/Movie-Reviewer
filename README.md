@@ -47,6 +47,6 @@ Paysen Lund
   ivananowaythisisarealemail@google.com
   paysennowaythisisarealemail@google.com
   
-  Link to Deployed Application - 
+  Link to Deployed Application - https://nameless-taiga-10745-2de592117e1f.herokuapp.com/ 
 
-  Screenshot - 
+  Screenshot - ![Alt text](image-1.png)  
