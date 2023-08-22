@@ -9,3 +9,4 @@ const Movie = sequelize.define('Movie', {
 });
 
 module.exports = Movie;
+//movies
